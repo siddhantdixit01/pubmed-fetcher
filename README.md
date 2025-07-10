@@ -51,7 +51,7 @@ poetry run get-papers-list "<query>" [OPTIONS]
 
 ```bash
 # Basic search (output to console)
-poetry run get-papers-list "CRISPR cancer therapy"
+poetry run get-papers-list "cancer therapy"
 
 # Save output to CSV
 poetry run get-papers-list "COVID-19 vaccine" -f results.csv
