@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pubmed-fetcher"
+version = "0.1.0"
+description = "Fetch PubMed papers with non-academic authors"
+authors = ["Siddhant Dixit <siddhantdixit97@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "papers" }]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.32.4"
+beautifulsoup4 = "^4.13.4"
+typer = "^0.16.0"
+lxml = "^6.0.0"
+pydantic = "^2.11.7"
+
+[tool.poetry.scripts]
+get-papers-list = "cli:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
